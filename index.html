@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+
+        <div class="input-section">
+            <select id="city-select" aria-label="Select A City">
+                <option value="">Select a city</option>
+                <option value="new york">New York</option>
+                <option value="los angeles">Los Angeles</option>
+                <option value="chicago">Chicago</option>
+                <option value="paris">Paris</option>
+                <option value="tokyo">Tokyo</option>
+                <option value="london">London</option>
+            </select>
+
+            <button id="get-weather-btn">Get Weather</button>
+        </div>
+
+        <div class="weather-info" id="weather-info">
+            <div class="weather-header">
+                <img id="weather-icon" class="weather-icon" src="" alt="Weather Icon">
+                <div id="main-temperature" class="main-temp"></div>
+                <div id="weather-main" class="weather-main"></div>
+                <div id="location" class="location"></div>
+            </div>
+
+            <div class="weather-details">
+                <div class="detail-item">
+                    <div class="detail-label">Feels Like</div>
+                    <div id="feels-like" class="detail-value"></div>
+                </div>
+
+                <div class="detail-item">
+                    <div class="detail-label">Humidity</div>
+                    <div id="humidity" class="detail-value"></div>
+                </div>
+
+                <div class="detail-item">
+                    <div class="detail-label">Wind Speed</div>
+                    <div id="wind" class="detail-value"></div>
+                </div>
+
+                <div class="detail-item">
+                    <div class="detail-label">Wind Gust</div>
+                    <div id="wind-gust" class="detail-value"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
