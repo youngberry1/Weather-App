@@ -61,7 +61,7 @@ button:hover {
 
 /* Weather info section */
 .weather-info {
-   display: block; /* Ensure it's visible */
+   display: block;
 }
 
 /* Weather header */
